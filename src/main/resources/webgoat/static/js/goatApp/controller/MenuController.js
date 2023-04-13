@@ -7,7 +7,8 @@ define(['jquery',
 		_,
 		Backbone,
 		MenuView) {
-		var Controller = function(options){
+        var Controller;
+		Controller = function(options){
 		 	_.extend(Controller.prototype,Backbone.Events);
 			options = options || {};
 			this.menuView = options.menuView;
